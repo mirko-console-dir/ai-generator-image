@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 import { download } from '../assets';
 import { downloadImage } from '../utils';
@@ -25,5 +26,8 @@ const Card = ({ _id, name, prompt, photo }) => (
     </div>
   </div>
 );
-
+// PropTypes validation
+Card.propTypes = {
+  _id:PropTypes.any, name:PropTypes.any, prompt:PropTypes.any, photo:PropTypes.any,
+};
 export default Card;
